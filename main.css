@@ -1,69 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt&family=Ubuntu&display=swap");
 
 :root {
-    --leftBG: #e3ca79;
-    --rightBG: #b13678;
-    --leftFancy: #1c112e;
-    --rightFancy: #3571de;
-    --leftText: #3571de;
-    --rightText: #1c112e;
+  --leftBG: #20bf55;
+  --rightBG: #01baef;
+  --leftFancy: #1b133f;
+  --rightFancy: #1b133f;
+  --leftText: #f0f600;
+  --rightText: #ff5100;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-  }
+  width: 0px;
+}
 
 body {
-    margin: 0;
+  margin: 0;
+  background-color: transparent;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .side {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 
-    overflow: hidden;
-    position: absolute;
+  overflow: hidden;
+  position: absolute;
+  background-image: url("https://static.prepleaf.com/homepage/icons/whatsapp-background.webp");
 }
 
 .side .title {
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 8vw;
-    margin: 0px 15vw;
-    width: 70vw;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 8vw;
+  margin: 0px 15vw;
+  width: 70vw;
 }
 
 .side .fancy {
-    font-family: "Prompt", cursive;
-    font-size: 1.3em;
-    line-height: 0.8em;
+  font-family: "Prompt", cursive;
+  font-size: 1.3em;
+  line-height: 0.8em;
 }
 
 #left-side {
-    background-color: var(--leftBG);
-    z-index: 2;
-    width: 90%;
+  background-color: var(--leftBG);
+  z-index: 2;
+  width: 0%;
 }
 
 #left-side .title {
-    color: var(--leftText);
+  color: var(--leftText);
 }
 
 #left-side .fancy {
-    color: var(--leftFancy);
+  color: var(--leftFancy);
 }
 #right-side .title {
-    color: var(--rightText);
+  color: var(--rightText);
 }
 
 #right-side .fancy {
-    color: var(--rightFancy);
+  color: var(--rightFancy);
 }
 
 #right-side {
-    background-color: var(--rightBG);
+  background-color: var(--rightBG);
+}
+
+.hero {
+  display: flex;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.tabs {
+  display: flex;
+  color: black;
+  text-shadow: 3px 3px white;
+  font-size: 0.9vw;
+  gap: 2em;
+  margin-right: 2em;
+}
+
+.tab {
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.tab:hover {
+  text-shadow: 3px 3px #ff008c;
 }
