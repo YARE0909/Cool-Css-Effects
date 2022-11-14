@@ -8,9 +8,4 @@ window.onload = function () {
   document.onmousemove = (e) => handleMove(e);
 
   document.ontouchmove = (e) => handleMove(e.touches[0]);
-
-
- 
-
-
 };

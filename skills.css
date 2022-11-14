@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+    background-color: rgb(29, 29, 29);
+    height: 100vh;  
+    margin: 0px;
+    overflow: hidden;
+    font-family: "Ubuntu", sans-serif;
+  background-image: url("https://static.prepleaf.com/homepage/icons/whatsapp-background.webp");
+
+  }
+
+  #gallery {
+    height: 140vmax;
+    width: 140vmax;  
+    position: absolute;
+  }
+
+  .tile {
+    border-radius: 1vmax;
+    position: absolute;
+    transition: transform 800ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tile:hover {
+    transform: scale(1.1);
+  }
+
+  
+
+
+.tile:hover > img {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+.tile > img {
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 800ms ease,
+    transform 800ms ease;
+}
+
+  
+.tile:nth-child(1) {
+  background-color: #f0db4f ;
+  height: 10%;
+  width: 10%;
+  left: 10%;
+  top: 5%;
+}
+
+.tile:nth-child(2) {
+  background-color: rgb(66, 165, 245);
+  height: 10%;
+  width: 10%;
+  left: 35%;
+  top: 0%;
+}
+
+.tile:nth-child(3) {
+  background-color: rgb(239, 83, 80);
+  height: 10%;
+  width: 10%;
+  left: 12%;
+  top: 30%;
+}
+
+.tile:nth-child(4) {
+  background-color: rgb(255, 0, 0);
+  height: 10%;
+  width: 10%;
+  left: 65%;
+  top: 30%;
+}
+
+.tile:nth-child(5) {
+  background-color: rgb(15, 15, 19);
+  height: 10%;
+  width: 10%;
+  left: 32%;
+  top: 40%;
+}
+
+.tile:nth-child(6) {
+  background-color: #1c1b20;
+  height: 10%;
+  width: 10%;
+  left: 68%;
+  top: 8%;
+}
+
+.tile:nth-child(7) {
+  background-color: rgb(39, 39, 39);
+  height: 10%;
+  width: 10%;
+  left: 35%;
+  top: 20%;
+}
+
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2vw;
+}
+
+
+.navbar {
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.tabs {
+  display: flex;
+  color: black;
+  text-shadow: 3px 3px white;
+  font-size: 1.5vw;
+  gap: 2em;
+  margin-right: 2em;
+}
+
+.tab {
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.tab:hover {
+  text-shadow: 3px 3px #ff008c;
+}
