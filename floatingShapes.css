@@ -7,13 +7,14 @@ body {
     overflow: hidden;
     font-family: "Ubuntu", sans-serif;
   background-image: url("https://static.prepleaf.com/homepage/icons/whatsapp-background.webp");
-
+  
   }
 
   #gallery {
     height: 140vmax;
     width: 140vmax;  
     position: absolute;
+    top: 30%;
   }
 
   .tile {
@@ -26,7 +27,7 @@ body {
   }
 
   .tile:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   
@@ -122,6 +123,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 0%;
   
 }
 
@@ -141,4 +144,9 @@ body {
 
 .tab:hover {
   text-shadow: 3px 3px #ff008c;
+}
+
+.header {
+  position: absolute;
+  top: 10%;
 }
